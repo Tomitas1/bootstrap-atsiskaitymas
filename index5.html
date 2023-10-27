@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="row header fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
+            <div class="container-fluid">
+              <a class="navbar-brand fw-bold" href="./index.html">Valgykla</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" 
+                        data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./index.html">Šventinės vakarienės</a></li>
+                          <li><a class="dropdown-item" href="./index.html">Šefai</a></li>
+                          <li><a class="dropdown-item" href="./index.html">Karjera</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="./index.html">Kontaktai</a></li>
+                        </ul>
+                    </li>
+                  <li class="nav-item fw-bold">
+                    <a class="nav-link" href="#dinners">Dienos pietūs</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Meniu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./index2.html">Užkandžiai</a></li>
+                      <li><a class="dropdown-item" href="./index3.html">Sriubos</a></li>
+                      <li><a class="dropdown-item" href="./index4.html">Karštieji patiekalai</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./index5.html">Užsakymai į namus</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success fw-bold" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!--Uzsakymas-->
+    <main>
+        <section id="orders" class="row mt-5 mb-5 pt-sm-5 m-5">
+            <h1 class="h1 text-center m-5">Užsakymai į namus</h1>
+            <div class="container">
+                <div class="row labels w-100">
+                    <div class="row">
+                        <label for="exampleDataList" class="form-label">Name</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                    </div>
+                    <div class="row">
+                        <label for="exampleDataList" class="form-label">Email</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                    </div>
+                    <div class="row">
+                        <label for="exampleDataList" class="form-label">Phone</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                    </div>
+                    <div class="row">
+                        <label for="exampleFormControlTextarea1">Order</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Write meals name and quantity</textarea>
+                    </div>
+                    <div class="row">
+                        <a href="#" class="btn btn-light w-100 bg-primary mt-2">
+                        <i>Submit</i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contacts">
+        <div class="container">
+            <div class="row mt-5 pt-5 w-100 g-3">
+                <div class="col p-5 pt-2">
+                    <p class="fw-bold"><i class="bi bi-hourglass"></i>Darbo laikas: 11-23val.</p>
+                    <p class="fw-bold"><i class="bi bi-arrow-down-right-circle-fill"></i>Laisvės al. 00, Kaunas</p>
+                    <p class="fw-bold"><i class="bi bi-watch"></i>Rekvizitai:
+                        <p>UAB "Lorem Ipsum"</p>
+                        <p>LT000000000000</p>
+                        <p>Lorem ipsum color, sit amet.</p>
+                    </p>
+                </div>
+                <div class="col p-5 pt-5 mt-5 m-5">
+                    <a href="https://twitter.com/"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                    <a href="https://www.facebook.com/"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                    <a href="https://www.instagram.com/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                </div>
+                <div class="col p-5 pt-5 mt-5 mr-5">
+                    <p class="fw-bold p-5">&copy; All rights reserved 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
